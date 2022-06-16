@@ -1,0 +1,252 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.name {
+  color: #313c4e;
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding-left: 2.8rem;
+  padding-top: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.desc {
+  color: #313c4e;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-left: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.socials-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.6rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+}
+
+.socials-container .socials-container__item {
+  color: #313c4e;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.grid1 {
+  grid-area: education;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.home__title--level {
+  margin-top: 1rem;
+}
+
+.level {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.institute {
+  font-size: 1.5rem;
+}
+
+.year {
+  color: #777;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.grid2 {
+  grid-area: skill;
+  margin-left: 7rem;
+}
+
+.skill-list {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 0.3em;
+}
+
+.skill-item {
+  color: #ffffff;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+  background: #777;
+  font-weight: 500;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.grid3 {
+  grid-area: project;
+  margin-left: 7rem;
+  margin-top: 1em;
+}
+
+.project-head {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.project-desc {
+  list-style-type: square;
+  padding-left: 2em;
+}
+
+.grid4 {
+  grid-area: experience;
+  margin-top: 1em;
+}
+
+.job {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.work-place {
+  font-size: 1.5rem;
+}
+
+.work-head {
+  list-style-type: square;
+  padding-left: 2em;
+}
+
+.grid5 {
+  grid-area: certificate;
+  margin-left: 7rem;
+  margin-top: 1em;
+}
+
+.certificate {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .socials-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 0.6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+  }
+  .socials-container .socials-container__item {
+    height: 2.5rem;
+    color: #313c4e;
+    font-size: 1.2rem;
+    font-weight: 600;
+    place-self: start center;
+  }
+  .home {
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+    display: -ms-grid;
+    display: grid;
+  }
+  .home__title {
+    color: #313c4e;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .name {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 2.8rem;
+    padding-top: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .socials-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 0.6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+  }
+  .socials-container .socials-container__item {
+    height: 2.5rem;
+    color: #313c4e;
+    font-size: 1.2rem;
+    font-weight: 600;
+    place-self: start center;
+  }
+  .home {
+    display: block;
+  }
+  .home__title {
+    color: #313c4e;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .socials-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 0.6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+  }
+  .socials-container .socials-container__item {
+    place-self: start center;
+  }
+  main {
+    display: block;
+  }
+}
+
+.home {
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
+  display: -ms-grid;
+  display: grid;
+  grid-template: 'education skill' 'education project' 'experience certificate' 'experience .';
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home__title {
+  color: #313c4e;
+  font-size: 2rem;
+  font-weight: 700;
+}
+/*# sourceMappingURL=main.css.map */

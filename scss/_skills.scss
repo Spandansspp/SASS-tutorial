@@ -1,0 +1,19 @@
+.grid2 {
+    grid-area: skill;
+    margin-left: 7rem;
+}
+.skill-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 0.3em;
+}
+.skill-item {
+    color: $background-color;
+    border-radius: 0.7rem;
+    padding: 0.5rem;
+    background: #777;
+    font-weight: 500;
+    justify-self: center;
+    align-self: center;
+}

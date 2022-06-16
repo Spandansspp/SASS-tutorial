@@ -1,0 +1,26 @@
+$primary-color: #313c4e;
+$background-color: #ffffff;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@mixin media-md {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-s {
+    @media screen and (max-width: 425px) {
+        @content;
+    }
+}
+@mixin media-xs {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}

@@ -1,0 +1,26 @@
+@import 'config';
+@import 'header';
+@import 'education';
+@import 'skills';
+@import 'projects';
+@import 'experience';
+@import 'certificate';
+@import 'responsive';
+
+.home {
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+    display: grid;
+    grid-template:
+        'education skill'
+        'education project'
+        'experience certificate'
+        'experience .';
+    justify-content: space-between;
+
+    &__title {
+        color: $primary-color;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
